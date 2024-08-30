@@ -2,9 +2,10 @@
   "name": "csv2sbv",
   "version": "0.0.1",
   "description": "",
-  "main": "main.ts",
+  "main": "main.js",
   "scripts": {
-    "test": "ts-node main.ts ./examples/subtitles.csv ./examples/subtitles.sbv"
+    "test": "ts-node main.ts ./examples/subtitles.csv ./examples/subtitles.sbv",
+    "build": "tsc main.ts"
   },
   "author": "mf7cli",
   "license": "MIT",
