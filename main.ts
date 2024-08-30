@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import * as csvParser from "csv-parser";
+import csvParser from "csv-parser";
 import * as util from "util";
 
 function formatTime(time: string): string {
@@ -38,7 +38,7 @@ function csvToSbv(inputCsv: string, outputSbv: string, rowName: {
   const sbvLines: string[] = [];
 
   fs.createReadStream(inputCsv)
-    .pipe(csvParser.default())
+    .pipe(csvParser())
     .on("data", (row: { [key: string]: string }) => {
       // ---------- BOMを除去
       Object.keys(row).forEach(key => {
@@ -75,6 +75,7 @@ function csvToSbv(inputCsv: string, outputSbv: string, rowName: {
 }
 
 export default csvToSbv;
+export { csvToSbv };
 
 // ---------- Example usage
 

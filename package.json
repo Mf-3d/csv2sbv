@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "ts-node main.ts ./examples/subtitles.csv ./examples/subtitles.sbv",
-    "build": "tsc main.ts"
+    "build": "tsc"
   },
   "author": "mf7cli",
   "license": "MIT",
