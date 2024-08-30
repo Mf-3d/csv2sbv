@@ -74,7 +74,6 @@ function csvToSbv(inputCsv: string, outputSbv: string, rowName: {
 
 // ---------- Example usage
 
-console.debug(__filename)
 // `process.argv[1] === __filename` で直接呼ばれたか確認する
 if (process.argv[1] === __filename) {
   if (!process.argv[2]) {
