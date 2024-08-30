@@ -9,5 +9,6 @@ CSV形式の字幕をSBVファイルに変換します。
 ## 使用例
 
 ```
-node main.js ./examples/subtitles.csv ./examples/subtitles.sbv
+tsc
+node dist/main.js ./examples/subtitles.csv ./examples/subtitles.sbv
 ```
