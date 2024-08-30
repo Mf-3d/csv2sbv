@@ -72,6 +72,8 @@ function csvToSbv(inputCsv: string, outputSbv: string, rowName: {
     });
 }
 
+export default csvToSbv;
+
 // ---------- Example usage
 
 // `process.argv[1] === __filename` で直接呼ばれたか確認する
