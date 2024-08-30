@@ -2,7 +2,6 @@ import * as fs from "fs";
 import * as csvParser from "csv-parser";
 import * as util from "util";
 
-// Define the format for the output SBV file
 function formatTime(time: string): string {
   return time.replace("#", "");
 }
@@ -65,7 +64,7 @@ function csvToSbv(inputCsv: string, outputSbv: string, rowName: {
 
       sbvLines.push(`${startTime},${endTime}`);
       sbvLines.push(text);
-      sbvLines.push(""); // Add an empty line between subtitles
+      sbvLines.push(""); // 字幕の間に空の行を追加する
     })
     .on("end", () => {
       fs.writeFileSync(outputSbv, sbvLines.join("\n"), "utf8");
@@ -89,7 +88,7 @@ if (process.argv[1] === __filename) {
   const outputSbvPath = process.argv[3];
   
   csvToSbv(inputCsvPath, outputSbvPath);
-  
+
   // csvToSbv(inputCsvPath, outputSbvPath, {
   //   startTime: "開始位置",
   //   endTime: "終了位置",
