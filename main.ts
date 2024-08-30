@@ -15,6 +15,8 @@ function formatTime(time: string): string {
  * 
  *  @example
  *  // コマンドラインから実行する場合
+ *  // "node main.js [input] [output]"
+ * 
  *  const inputCsvPath = process.argv[2];
     const outputSbvPath = process.argv[3];
 
