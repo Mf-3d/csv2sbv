@@ -90,9 +90,11 @@ if (process.argv[1] === __filename) {
   
   csvToSbv(inputCsvPath, outputSbvPath);
 
-  // csvToSbv(inputCsvPath, outputSbvPath, {
-  //   startTime: "開始位置",
-  //   endTime: "終了位置",
-  //   text: "抽出テキスト"
-  // });
+  /*
+  csvToSbv(inputCsvPath, outputSbvPath, {
+    startTime: "開始位置",
+    endTime: "終了位置",
+    text: "抽出テキスト"
+  });
+  */
 }
