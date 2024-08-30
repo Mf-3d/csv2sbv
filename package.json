@@ -1,0 +1,24 @@
+{
+  "name": "csv2sbv",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "test": "ts-node main.ts ./examples/subtitles.csv ./examples/subtitles.sbv"
+  },
+  "author": "mf7cli",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fs": "^0.0.1-security",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.1",
+    "ts-node": "^10.9.2"
+  },
+  "keywords": [],
+  "engines": {
+    "node": "<=21.7.x"
+  }
+}
