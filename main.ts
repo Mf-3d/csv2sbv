@@ -11,7 +11,7 @@ function formatTime(time: string): string {
  *  
  *  @param inputCsv 変数するCSVファイルのパス。
  *  @param outputSbv 出力するSBVファイルのパス。
- *  @param rowName 取得する列を定義します。
+ *  @param rowName テキストとして取得する列を定義します。
  * 
  *  @example
  *  // コマンドラインから実行する場合
