@@ -10,7 +10,7 @@
   "author": "mf7cli",
   "license": "MIT",
   "dependencies": {
-    "csv-parser": "^3.0.0",
+    "csv-parser": "^3.2.0",
     "fs": "^0.0.1-security",
     "typescript": "^6.0.2"
   },
